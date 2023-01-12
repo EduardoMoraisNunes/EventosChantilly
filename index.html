@@ -50,17 +50,40 @@
             </div>
             <div id="services" class="pages"></div>
             <div id="renting" class="pages"></div>
-            <div id="contact" class="pages"></div>
+            <div id="contact" class="pages">
+                <div id="contacinfo">
+                    <div id="instagram">
+                        <img src="" alt="">
+                        <a href="https://www.instagram.com/eventos.chantilly/" target="_blank">GabyRW(@eventos.chantilly)</a>
+                    </div>
+                    <div id="facebook">
+                        <img src="" alt="">
+                        <a href="https://www.facebook.com/gabrielly.rombaldiwandscheer" target="_blank">gabrielly.rombaldiwandscheer</a>
+                    </div>
+                    <div id="whatsapp">
+                        <img src="" alt="">
+                        <a href="" target="_blank">Whatsapp</a>
+                    </div>
+                    <div id="mail">
+                        <img src="" alt="">
+                        <a href="mailto:EventosChantilly@gmail.com">EventosChantilly@gmail.com</a>
+                    </div>
+                    <div id="phone">
+                        <img src="" alt="">
+                        <a href="tel:(65)99272-3434">(65)99272-3434</a>
+                    </div>
+                </div>
+            </div>
         </div>
         
     <footer>
         <p id="companyname">Eventos Chantilly©</p>
     </footer>
     <script>
-        document.getElementById('inic').addEventListener("click", function() {openTab('home')})
-        document.getElementById('serv').addEventListener("click", function() {openTab('services')})
-        document.getElementById('alug').addEventListener("click", function() {openTab('renting')})
-        document.getElementById('cont').addEventListener("click", function() {openTab('contact')})
+        document.getElementById('inic').addEventListener("click", function() {openTab('home', 'home')})
+        document.getElementById('serv').addEventListener("click", function() {openTab('services', 'serv')})
+        document.getElementById('alug').addEventListener("click", function() {openTab('renting', 'alug')})
+        document.getElementById('cont').addEventListener("click", function() {openTab('contact', 'cont')})
         function openTab(pageselected){
             pages = document.getElementsByClassName("pages");
             for (i = 0; i < pages.length; i++) {
