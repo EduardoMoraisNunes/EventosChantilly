@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -33,17 +33,41 @@
             </div>
         </div>
         <div id="pages">
-            <div id="home">
-                <div id="reccomended"></div>
+            <div id="home" class="pages">
+                <div id="promos">
+                    <div id="promoimage"></div>
+                    <div id="promotext">
+                        <p id="itemtext1">PROMOÇÃO DE [PRODUTO]</p>
+                        <p id="itemtext2">DESCONTO EM [PRODUTO EM DESCONTO]</p>
+                    </div>
+                    <a id="promolink" href=""></a>
+                </div>
+                <div id="reccomended">
+                    <div id="item1"></div>
+                    <div id="item2"></div>
+                    <div id="item3"></div>
+                </div>
             </div>
+            <div id="services" class="pages"></div>
+            <div id="renting" class="pages"></div>
+            <div id="contact" class="pages"></div>
         </div>
-        <div id="promos">
-            <div id="promoimage"></div>
-            <div id="promotext"></div>
-            <a id="promolink" href=""></a>
-        </div>
+        
     <footer>
         <p id="companyname">Eventos Chantilly©</p>
     </footer>
+    <script>
+        document.getElementById('inic').addEventListener("click", function() {openTab('home')})
+        document.getElementById('serv').addEventListener("click", function() {openTab('services')})
+        document.getElementById('alug').addEventListener("click", function() {openTab('renting')})
+        document.getElementById('cont').addEventListener("click", function() {openTab('contact')})
+        function openTab(pageselected){
+            pages = document.getElementsByClassName("pages");
+            for (i = 0; i < pages.length; i++) {
+            pages[i].style.display = "none";
+            }
+           document.getElementById(pageselected).style.display = "inline-flex";
+        }
+    </script>
 </body>
 </html>

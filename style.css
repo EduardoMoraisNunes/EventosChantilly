@@ -33,11 +33,11 @@ footer{
     height: 6%;
     max-height: 5em;
     min-height: 3em;
-    position: fixed;
+    position: absolute;
     background-color: #39abff;
     bottom: 0%;
+    left: 0%;
     text-align: center;
-    
     display: inline-flex;
     justify-content: center;
     align-content: center;
@@ -105,7 +105,59 @@ footer{
     margin: 0%;
 }
 #pages{
-    height: auto;
+    height: 75%;
     width: 100%;
     display: inline-flex;
+}
+.pages{
+    display: inline-flex;
+    /*justify-content: center;*/
+    flex-flow: column;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+#services, #renting, #contact{
+    display: none;
+}
+#promos{
+    text-align: center;
+    height: 8em;
+    width: 73em;
+    max-width: 87%;
+    background-color: pink;
+    top: 4%;
+    border-radius: 8px;
+    position: relative;
+    margin: 0%;
+}
+#promos:hover{
+    background-color: palevioletred;
+}
+#reccomended{
+    text-align: center;
+    height: 17em;
+    width: 73em;
+    max-width: 87%;
+    background-color: pink;
+    top: 9%;
+    position: relative;
+    margin: 0%;
+    display: flex;
+    align-content: space-between
+}
+#item1{
+    height: 17em;
+    width: 21em;
+    background-color: red;
+}
+#item2{
+    height: 17em;
+    width: 21em;
+    background-color: red;
+}
+#item3{
+    height: 17em;
+    width: 21em;
+    background-color: red;
 }
