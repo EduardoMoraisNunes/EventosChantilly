@@ -33,7 +33,7 @@ footer{
     height: 6%;
     max-height: 5em;
     min-height: 3em;
-    position: absolute;
+    position: relative;
     background-color: #39abff;
     bottom: 0%;
     left: 0%;
@@ -42,7 +42,7 @@ footer{
     justify-content: center;
     align-content: center;
     flex-wrap: wrap;
-    font-size: 2.1vh;
+    font-size: 66%;
 }
 #buttons{
     height: 10%;
@@ -160,4 +160,18 @@ footer{
     height: 17em;
     width: 21em;
     background-color: red;
+}
+#contactinfo{
+    position: relative;
+    top: 12%;
+}
+.accounts{
+    padding-bottom: 2em;
+    display: table-caption;
+}
+.logo{
+    height: 10%;
+    width: 10%;
+    position: relative;
+    padding-bottom: 0.3em;
 }
